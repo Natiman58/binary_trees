@@ -15,7 +15,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	if (!tempNode || tempNode == NULL)
 		return (NULL);
 
-	/*else create the new tempNode*/
+	/*else create the new tempNode using the old(parent) node*/
 	tempNode->parent = parent;
 	tempNode->n = value;
 	tempNode->left = NULL;
