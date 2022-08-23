@@ -9,18 +9,27 @@
  */
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
-	if (!parent)
-		return (NULL);
-	binary_tree_t *new_Node = binary_tree_node(parent, value);
+	/*declare new node struct*/
+	binary_tree_t *new_Node;
 
-	if (!new_Node)
+	if (!parent || parent == NULL)
+		return (NULL);
+	/*create new node*/
+	new_Node = binary_tree_node(parent, value);
+
+	if (!new_Node || new_Node == NULL)
 		return (NULL);
 
+	/*if the old parent has a right node*/
+	/*set the right child of the new node to that of the parent's*/
+	/*then replace the parent of the old right child with new node*/
 	if (parent->right != NULL)
 	{
 		new_Node->right = parent->right;
 		parent->right->parent = new_Node;
 	}
+	/*if the old parent doesnt have any right child*/
+	/*set the new node as the right child of the old parent*/
 	parent->right = new_Node;
 
 	return (new_Node);
