@@ -61,7 +61,9 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 /* Advanced Tasks */
 binary_tree_t *binary_trees_ancestor
 (const binary_tree_t *first, const binary_tree_t *second);
-
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_postorder_plus(
+		const binary_tree_t *tree, void (*func)(int), size_t level);
 
 
 #endif
