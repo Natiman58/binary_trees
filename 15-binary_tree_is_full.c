@@ -3,7 +3,7 @@
  * binary_tree_is_full - checks if a BT is full
  * @tree: pointer to the tree to be checked
  * Return: 0 if no tree or tree is null
- * else 1 if full
+ * else 1 if full(each parent has 2 or no childeren)
  */
 int binary_tree_is_full(const binary_tree_t *tree)
 {
