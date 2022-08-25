@@ -7,11 +7,12 @@
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	if (!tree || tree == NULL)
-		return (0);
 	size_t height;
 	size_t num_nodes;
 	size_t expo;
+
+	if (!tree || tree == NULL)
+		return (0);
 
 	if (!tree->right && !tree->left)
 		return (1);
