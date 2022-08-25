@@ -33,7 +33,7 @@ typedef struct binary_tree_s heap_t;
 /*prototypes of the print.c file*/
 void binary_tree_print(const binary_tree_t *tree);
 
-/*Tasks*/
+/* Mandatory Tasks */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
@@ -57,6 +57,12 @@ size_t binary_tree_height(const binary_tree_t *tree);
 size_t binary_tree_size(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+
+/* Advanced Tasks */
+binary_tree_t *binary_trees_ancestor
+(const binary_tree_t *first, const binary_tree_t *second);
+
+
 
 #endif
 
