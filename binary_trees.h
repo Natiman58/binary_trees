@@ -66,7 +66,7 @@ void binary_tree_postorder_plus(
 		const binary_tree_t *tree, void (*func)(int), size_t level);
 int binary_tree_is_complete(const binary_tree_t *tree);
 int check(const binary_tree_t *tree, size_t idx, size_t size);
-
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 
 #endif
 
