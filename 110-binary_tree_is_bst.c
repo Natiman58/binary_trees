@@ -15,6 +15,7 @@ int binary_tree_is_bst(const binary_tree_t *tree)
 
 /**
  * check_BST - compares the value of node to the the min and max
+ * @tree: pointer to the root of the tree
  * @min: minimum value in the tree
  * @max: maximum value in the tree
  * Return: 1 if tree is valid BST, else 0.
